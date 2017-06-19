@@ -1,5 +1,7 @@
 package com.kcs.students.app.utils;
 
+import com.sun.istack.internal.Nullable;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,6 +14,7 @@ public class JdbcUtils {
     private static final String NAME = "root";
     private static final String PASS = "";
 
+    @Nullable
     public static Connection getConnection(){
         Connection connection =null;
         try {
